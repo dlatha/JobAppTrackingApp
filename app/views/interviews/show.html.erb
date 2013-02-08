@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Job:</b>
+  <%= @interview.job_id %>
+</p>
+
+<p>
+  <b>Company:</b>
+  <%= @interview.company_id %>
+</p>
+
+<p>
+  <b>Jobdescription:</b>
+  <%= @interview.jobDescription %>
+</p>
+
+<p>
+  <b>Interviewer:</b>
+  <%= @interview.interviewer %>
+</p>
+
+<p>
+  <b>Typeofinterview:</b>
+  <%= @interview.typeOfInterview %>
+</p>
+
+<p>
+  <b>Feedback:</b>
+  <%= @interview.feedback %>
+</p>
+
+<p>
+  <b>Drawbacks:</b>
+  <%= @interview.drawbacks %>
+</p>
+
+<p>
+  <b>Improvements:</b>
+  <%= @interview.improvements %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @interview.date %>
+</p>
+
+<p>
+  <b>Time:</b>
+  <%= @interview.time %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @interview.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_interview_path(@interview) %> |
+<%= link_to 'Back', interviews_path %>

@@ -1,0 +1,61 @@
+<%= form_for(@interview) do |f| %>
+  <% if @interview.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@interview.errors.count, "error") %> prohibited this interview from being saved:</h2>
+
+      <ul>
+      <% @interview.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :job_id %><br />
+    <%= f.number_field :job_id %>
+  </div>
+  <div class="field">
+    <%= f.label :company_id %><br />
+    <%= f.number_field :company_id %>
+  </div>
+  <div class="field">
+    <%= f.label :jobDescription %><br />
+    <%= f.text_area :jobDescription %>
+  </div>
+  <div class="field">
+    <%= f.label :interviewer %><br />
+    <%= f.text_field :interviewer %>
+  </div>
+  <div class="field">
+    <%= f.label :typeOfInterview %><br />
+    <%= f.text_field :typeOfInterview %>
+  </div>
+  <div class="field">
+    <%= f.label :feedback %><br />
+    <%= f.text_area :feedback %>
+  </div>
+  <div class="field">
+    <%= f.label :drawbacks %><br />
+    <%= f.text_area :drawbacks %>
+  </div>
+  <div class="field">
+    <%= f.label :improvements %><br />
+    <%= f.text_area :improvements %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br />
+    <%= f.date_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :time %><br />
+    <%= f.time_select :time %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

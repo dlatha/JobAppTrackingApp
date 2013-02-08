@@ -1,0 +1,43 @@
+<h1>Listing interviews</h1>
+
+<table>
+  <tr>
+    <th>Job</th>
+    <th>Company</th>
+    <th>Jobdescription</th>
+    <th>Interviewer</th>
+    <th>Typeofinterview</th>
+    <th>Feedback</th>
+    <th>Drawbacks</th>
+    <th>Improvements</th>
+    <th>Date</th>
+    <th>Time</th>
+    <th>Status</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @interviews.each do |interview| %>
+  <tr>
+    <td><%= interview.job_id %></td>
+    <td><%= interview.company_id %></td>
+    <td><%= interview.jobDescription %></td>
+    <td><%= interview.interviewer %></td>
+    <td><%= interview.typeOfInterview %></td>
+    <td><%= interview.feedback %></td>
+    <td><%= interview.drawbacks %></td>
+    <td><%= interview.improvements %></td>
+    <td><%= interview.date %></td>
+    <td><%= interview.time %></td>
+    <td><%= interview.status %></td>
+    <td><%= link_to 'Show', interview %></td>
+    <td><%= link_to 'Edit', edit_interview_path(interview) %></td>
+    <td><%= link_to 'Destroy', interview, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Interview', new_interview_path %>

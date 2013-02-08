@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  companyName: MyString
+  location: MyString
+  applStatus: MyString
+  typeOfCompany: MyString
+  interviewProcess: MyString
+  currentStage: MyString
+  notes: MyString
+
+two:
+  companyName: MyString
+  location: MyString
+  applStatus: MyString
+  typeOfCompany: MyString
+  interviewProcess: MyString
+  currentStage: MyString
+  notes: MyString

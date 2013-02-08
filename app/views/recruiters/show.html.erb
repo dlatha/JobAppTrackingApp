@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Company:</b>
+  <%= @recruiter.company_id %>
+</p>
+
+<p>
+  <b>Recruitername:</b>
+  <%= @recruiter.recruiterName %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @recruiter.email %>
+</p>
+
+<p>
+  <b>Feedback:</b>
+  <%= @recruiter.feedback %>
+</p>
+
+<p>
+  <b>Telephone:</b>
+  <%= @recruiter.telephone %>
+</p>
+
+<p>
+  <b>Scheduleddate:</b>
+  <%= @recruiter.scheduledDate %>
+</p>
+
+<p>
+  <b>Scheduledtime:</b>
+  <%= @recruiter.scheduledTime %>
+</p>
+
+
+<%= link_to 'Edit', edit_recruiter_path(@recruiter) %> |
+<%= link_to 'Back', recruiters_path %>

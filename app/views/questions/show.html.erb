@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Interview:</b>
+  <%= @question.interview_id %>
+</p>
+
+<p>
+  <b>Typeofquestion:</b>
+  <%= @question.typeOfQuestion %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @question.title %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= @question.body %>
+</p>
+
+<p>
+  <b>Youranswer:</b>
+  <%= @question.yourAnswer %>
+</p>
+
+<p>
+  <b>Rightanswer:</b>
+  <%= @question.rightAnswer %>
+</p>
+
+<p>
+  <b>Improvements:</b>
+  <%= @question.improvements %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @question.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_question_path(@question) %> |
+<%= link_to 'Back', questions_path %>

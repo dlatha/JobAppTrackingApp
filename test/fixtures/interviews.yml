@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  job_id: 1
+  company_id: 1
+  jobDescription: MyText
+  interviewer: MyString
+  typeOfInterview: MyString
+  feedback: MyText
+  drawbacks: MyText
+  improvements: MyText
+  date: 2013-02-07
+  time: 2013-02-07 22:28:14
+  status: MyString
+
+two:
+  job_id: 1
+  company_id: 1
+  jobDescription: MyText
+  interviewer: MyString
+  typeOfInterview: MyString
+  feedback: MyText
+  drawbacks: MyText
+  improvements: MyText
+  date: 2013-02-07
+  time: 2013-02-07 22:28:14
+  status: MyString
